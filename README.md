@@ -88,8 +88,8 @@ Each tool is independent — no shared state between tools.
 
 MIT — free to use and modify
 
-## Made with ❤️
+## Made with everyone
 
-Created by [Your Name]
+Created by Jack Nguyen
 
 Share your tools and feedback on [Facebook](https://facebook.com/groups/laptrinhvien)

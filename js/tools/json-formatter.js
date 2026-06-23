@@ -134,7 +134,7 @@ function initJsonFormatter() {
                 }
             ],
             metadata: {
-                author: "Your Name",
+                author: "Jack Nguyen",
                 license: "MIT",
                 active: true,
                 downloads: 1337,
