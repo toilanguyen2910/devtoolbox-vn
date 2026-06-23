@@ -1,0 +1,147 @@
+<div class="tool-page">
+    <!-- Tool Header -->
+    <div class="tool-header">
+        <h1>
+            <span class="tool-icon-large">🔐</span>
+            Base64 Converter
+        </h1>
+        <p>Encode and decode text and files to/from Base64. Perfect for API testing, data transmission, and file encoding.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tool-section">
+        <div class="tabs">
+            <button class="tab active" data-tab="encode-tab">
+                📝 Encode
+            </button>
+            <button class="tab" data-tab="decode-tab">
+                🔓 Decode
+            </button>
+        </div>
+
+        <!-- Encode Tab -->
+        <div class="tab-content active" id="encode-tab">
+            <div class="tool-layout">
+                <!-- Input Column -->
+                <div class="tool-column">
+                    <h3>Input</h3>
+                    <div class="form-group">
+                        <label for="encode-text">Text or File</label>
+                        <textarea
+                            id="encode-text"
+                            placeholder="Paste text to encode or use file upload below..."
+                            rows="8"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="encode-file">Or Upload a File</label>
+                        <input type="file" id="encode-file" />
+                        <p style="font-size: 12px; color: var(--color-gray-text); margin-top: 8px;">
+                            Max file size: 10MB. File will be converted to Base64 encoded string.
+                        </p>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="encode-btn" class="btn">
+                            <span>✨</span> Encode to Base64
+                        </button>
+                        <button id="encode-clear" class="btn btn-secondary">
+                            <span>🗑️</span> Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Output Column -->
+                <div class="tool-column">
+                    <h3>Output</h3>
+                    <div class="output-area">
+                        <button id="encode-copy" class="btn btn-small output-copy-btn">
+                            📋 Copy
+                        </button>
+                        <pre id="encode-output" class="output-content"></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Encode Message -->
+            <div id="encode-message"></div>
+        </div>
+
+        <!-- Decode Tab -->
+        <div class="tab-content" id="decode-tab">
+            <div class="tool-layout">
+                <!-- Input Column -->
+                <div class="tool-column">
+                    <h3>Input</h3>
+                    <div class="form-group">
+                        <label for="decode-text">Base64 String</label>
+                        <textarea
+                            id="decode-text"
+                            placeholder="Paste Base64 encoded string here... Example: SGVsbG8gV29ybGQ="
+                            rows="8"
+                        ></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="decode-btn" class="btn">
+                            <span>🔓</span> Decode from Base64
+                        </button>
+                        <button id="decode-clear" class="btn btn-secondary">
+                            <span>🗑️</span> Clear
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Output Column -->
+                <div class="tool-column">
+                    <h3>Output</h3>
+                    <div class="output-area">
+                        <button id="decode-copy" class="btn btn-small output-copy-btn">
+                            📋 Copy
+                        </button>
+                        <pre id="decode-output" class="output-content"></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decode Message -->
+            <div id="decode-message"></div>
+        </div>
+    </div>
+
+    <!-- Help Section -->
+    <div class="tool-section">
+        <details>
+            <summary style="cursor: pointer; font-weight: 500; margin-bottom: var(--spacing-md);">
+                💡 Tips & Examples
+            </summary>
+            <div class="message info" style="margin-top: var(--spacing-md);">
+                <span class="message-icon">ℹ️</span>
+                <div class="message-content">
+                    <ul style="margin: 0; padding-left: 20px;">
+                        <li><strong>Text Encoding</strong> - Convert any text to Base64 for safe transmission</li>
+                        <li><strong>File Upload</strong> - Upload files (images, documents) to encode as Base64</li>
+                        <li><strong>Common Use Cases</strong> - API authentication tokens, image data URIs, email attachments</li>
+                        <li><strong>Character Support</strong> - Supports UTF-8, special characters, and binary data</li>
+                        <li><strong>File Size</strong> - Base64 encoding increases size by ~33%</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Example Section -->
+    <div class="tool-section">
+        <details>
+            <summary style="cursor: pointer; font-weight: 500; margin-bottom: var(--spacing-md);">
+                📝 Try an Example
+            </summary>
+            <div style="margin-top: var(--spacing-md);">
+                <button id="load-example-btn" class="btn btn-secondary">
+                    Load Example Text
+                </button>
+            </div>
+        </details>
+    </div>
+</div>

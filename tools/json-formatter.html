@@ -1,0 +1,93 @@
+<div class="tool-page">
+    <!-- Tool Header -->
+    <div class="tool-header">
+        <h1>
+            <span class="tool-icon-large">📋</span>
+            JSON Formatter & Validator
+        </h1>
+        <p>Format, validate, and prettify JSON with syntax highlighting. Perfect for debugging API responses and config files.</p>
+    </div>
+
+    <!-- Input Section -->
+    <div class="tool-section">
+        <div class="form-group">
+            <label for="json-input">Input JSON</label>
+            <textarea
+                id="json-input"
+                placeholder='Paste your JSON here... Example: {"name": "DevToolboxVN", "active": true}'
+                rows="12"
+            ></textarea>
+        </div>
+
+        <div class="button-group">
+            <button id="format-btn" class="btn">
+                <span>✨</span> Format & Validate
+            </button>
+            <button id="minify-btn" class="btn btn-secondary">
+                <span>🗜️</span> Minify
+            </button>
+            <button id="clear-btn" class="btn btn-secondary">
+                <span>🗑️</span> Clear All
+            </button>
+        </div>
+    </div>
+
+    <!-- Message Area -->
+    <div id="message-area"></div>
+
+    <!-- Output Section -->
+    <div class="tool-section" id="output-section" style="display: none;">
+        <div class="form-group">
+            <label for="json-output">Formatted Output</label>
+            <div class="output-area">
+                <button id="copy-btn" class="btn btn-small output-copy-btn">
+                    📋 Copy
+                </button>
+                <pre id="json-output" class="output-content"></pre>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div id="stats-area" class="message info" style="display: none;">
+            <span class="message-icon">📊</span>
+            <div class="message-content">
+                <div id="stats-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Section -->
+    <div class="tool-section">
+        <details>
+            <summary style="cursor: pointer; font-weight: 500; margin-bottom: var(--spacing-md);">
+                💡 Tips & Shortcuts
+            </summary>
+            <div class="message info" style="margin-top: var(--spacing-md);">
+                <span class="message-icon">ℹ️</span>
+                <div class="message-content">
+                    <ul style="margin: 0; padding-left: 20px;">
+                        <li><strong>Format</strong> - Prettify JSON with proper indentation and syntax highlighting</li>
+                        <li><strong>Minify</strong> - Compress JSON by removing whitespace</li>
+                        <li><strong>Validation</strong> - Automatically checks for syntax errors</li>
+                        <li><strong>Copy</strong> - Click the copy button to copy formatted JSON to clipboard</li>
+                        <li><strong>Statistics</strong> - View object depth, key count, and more</li>
+                    </ul>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Example Section -->
+    <div class="tool-section">
+        <details>
+            <summary style="cursor: pointer; font-weight: 500; margin-bottom: var(--spacing-md);">
+                📝 Try an Example
+            </summary>
+            <div style="margin-top: var(--spacing-md);">
+                <button id="load-example-btn" class="btn btn-secondary">
+                    Load Example JSON
+                </button>
+            </div>
+        </details>
+    </div>
+</div>
